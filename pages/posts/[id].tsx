@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-export default () => {
+const Post = () => {
   const router = useRouter()
   const {id} = router.query
 
@@ -9,3 +9,5 @@ export default () => {
     <p>id: {id}</p>
   </div>
 }
+
+export default Post
